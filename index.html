@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+<body>
+    <div class="wraper">
+        <div class="column">
+            <button class="lg-button">BUTTON</button>
+            <button class="button">DEPOSIT</button>
+            <button class="sm-button">BUTTON</button>
+            <a class="sign" href="#">SIGN IN</a>
+            <a class="headlin" href="#"><h3>Headlin Link</h3></a>
+            <a class="link" href="#">Link 01</a>
+            <a class="link" href="#">Link 02</a>
+            <a class="text-link" href="#"><p>Text Link</p></a>
+            <a class="arrow-link" href="#"></a>
+            <a class="icon-link" href="#"></a>
+        </div>
+        <div class="column">
+            <h2 id="headline">HEADLINE MODAL WINDOW</h2>
+            <h2>HEADLINE MODAL CONTENT</h2>
+            <h3>Secondary Headline</h3>
+            <h3 id="list">LIST HEADLINE</h3>
+            <p class="headline-text">ProTradeFx gives access to its services and website to customers that agree to its terms and conditions.</p>
+            <p class="headline-text"> Any limits or hindrances, which we may consent to in writing, and any market, legal, regulatory, or statutory requirements, bind our responsibilities.</p>
+            <h4>Small Headline</h4>
+            <p class="sm-text">Risk warning: trading contracts for differences (“cfd’s”) and foreign exchange (forex) and use of the trading platform which allows high leverage investments in cfd’s and forex carries a high level of risk to your investment. Make sure you fully understand the risks involved and take advice if necessary.</p>
+            <p class="sm-text">Necessary ye contented newspaper zealously breakfast he prevailed. Melancholy middletons yet understood decisively boy law she.</p>
+            <div class="tab1-container">
+                 <div class="tab-button-wrapper">
+                    <button>Tab 01</button>
+                    <button>Tab 02</button>
+                    <button>Tab 03</button>
+                 </div>
+                 <div class="tab-line-wrapper"> 
+                    <div class="tab-line"></div>
+                    <div class="tab-line"></div>
+                    <div class="tab-line"></div>
+                 </div>
+            </div>
+            <div class="tab2-container">
+                    <button>Tab 01</button>
+                    <button >Tab 02</button>
+                    <button class="tab-active">Tab 03</button>
+            </div>
+            <table cellpadding="15" >
+                <tr>
+                    <th>Column 01</th>
+                    <th>Column 02</th>
+                    <th>Column 03</th>
+                </tr>
+                <tr>
+                    <td>Link 01</td>
+                    <td>leo@leo.com</td>
+                    <td>$ 4,000.00</td>
+                </tr>
+                <tr>
+                    <td>Link 02</td>
+                    <td>leo@leo.com</td>
+                    <td>$ 4,000.00</td>
+                </tr>
+                <tr>
+                    <td>Link 03</td>
+                    <td>leo@leo.com</td>
+                    <td>$ 4,000.00</td>
+                </tr>
+            </table>
+            <ul class="pagination">
+                    <li class="arrow"><a href="#" class="arrow"><img src="css/img/pag-left.png" alt=""></a></li>
+                    <li class="pag-active"><a href="#">1</a></li>
+                    <li ><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#" class="arrow"><img src="css/img/pag-right.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="column column3">
+            <form>
+                 <label for="full-name">Full Name:<span>*</span></label>
+                 <input type="text"  id="full-name" placeholder="Full Name">
+                 <input type="password" placeholder="Password">
+                 <input type="text" id="form-sel" value="340542 (EUR) MT4">
+                 <input type="text" placeholder="Enter amount" class="inp-amount">
+            </form>   
+                 <div class="select-wrap">  
+                     <button  class="select">Show All</button>
+                     <ul class="select_list">
+                        <li class="select_item" data-value="Line 01"><p>Line 01</p></li>
+                        <li class="select_item" data-value="Line 02"><p>Line 02</p></li>
+                        <li class="select_item" data-value="Line 03"><p>Line 03</p></li>
+                     </ul>
+                 </div>
+            <label class="container">Remember Me
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <p class="status approve">approve</p>
+            <p class="status denied">denied</p>
+            <p class="status pending">pending</p>
+            <div class="stats-wrapper">
+                <div class="stats stats1">
+                    <p>SILVER</p>
+                    <span>16.616 | 16.638</span>
+                </div>
+                <div class="stats stats2">
+                    <p>GOLD</p>
+                    <span>1265.52 | 1265.75</span>
+                </div>
+            </div>
+            <button class="lg-button" id="openModal" >Modal</button>
+            <div id="modal" class="alertModal">
+                <div class="modal-content">
+                        <h2>HEADLINE MODAL WINDOW</h2>
+                        <form class="modal-form modal1" novalidate>
+                             <input type="tel"   placeholder="+38 (0) XXX-XX-XX">
+                             <input type="text"   id="name" placeholder="Full Name">
+                             <input type="password" id="password" placeholder="Password">
+                             <input type="email" placeholder="E-mail"> 
+                             <button type="submit" class="lg-button" value="Submit" id="submit">Submit</button>
+                        </form>
+                </div>
+             </div>
+             <div id="modal2" class="alertModal">
+                <div class="modal-content2">
+                    <h2>The Form has been sent</h2>
+                </div>
+            </div>
+    </div>
+
+    <script>
+ (function(){
+        document.querySelector(".tab1-container").addEventListener("click", (e) => {
+           if(event.target.tagName == "BUTTON") {
+                let tabOnebuttons = document.querySelectorAll(".tab-button-wrapper button");
+                for (let j =0; j < tabOnebuttons.length; j++){
+                    tabOnebuttons[j].style.color = "#e0ba14";
+                }
+                event.target.style.color ="#ffffff";
+                let tabOneLines = document.querySelectorAll(".tab-line")
+                for (let k =0; k < tabOneLines.length; k++){
+                     tabOneLines[k].style.backgroundColor  = "#595959";  
+                 }
+                tabOneLines[+event.target.innerHTML.substr(-1)-1].style.backgroundColor  = "#b6a164";  
+           }     
+        }) 
+
+        document.querySelector(".tab2-container").addEventListener("click", (e) => {
+            if(event.target.tagName == "BUTTON") {
+                let tabTwobuttons = document.querySelectorAll(".tab2-container button");
+                for (let j =0; j < tabTwobuttons.length; j++){
+                     tabTwobuttons[j].classList.remove("tab-active")
+                }  
+                event.target.classList.add("tab-active")
+            }    
+        })
+   
+        document.querySelector(".pagination").addEventListener("click", (e) => {
+            if(event.target.tagName == "A") {
+                let pags =  document.querySelectorAll(".pagination a:not(.arrow)");
+                for (let j =0; j < pags.length; j++){
+                    pags[j].parentNode.classList.remove("pag-active")
+                }  
+                event.target.parentNode.classList.add("pag-active")
+             }    
+        })
+
+        document.querySelector(".select").addEventListener("click", (e) => {
+            event.target.classList.toggle("select-active");
+            document.querySelector(".select_list").classList.toggle("select_list-active");
+        });
+
+        document.querySelector("#openModal").addEventListener("click", () =>{
+        document.getElementById("modal").style.display = "block"
+        })
+
+        document.querySelector("#modal").addEventListener("click", (e) => {
+            if(event.target.getAttribute("class") && event.target.parentNode.className !="modal-content" && event.target.parentNode.className !="modal-form" && event.target.parentNode.className !="alertModal") {
+                document.querySelector("#modal").style.display = "none";
+            } 
+        })
+   
+        document.querySelector("#modal2").addEventListener("click", (e) => {
+            if(event.target.getAttribute("class") && event.target.parentNode.className !="modal-content2") {
+                document.querySelector("#modal2").style.display = "none";
+            } 
+        })
+
+        document.querySelector("#submit").addEventListener("click", () => {
+
+            let phone = document.querySelector("input[type='tel']").value;
+            let name = document.querySelector("#name").value;
+            let password = document.querySelector("#password").value;
+            let email = document.querySelector("input[type='email']").value;
+
+            let obj = {
+                "phone": phone,
+                "name":name,
+                "password": password,
+                "email": email
+            }
+            console.log(obj)
+
+            document.querySelector("input[type='tel']").value = "";
+            document.querySelector("#name").value = "";
+            document.querySelector("#password").value = "";
+            document.querySelector("input[type='email']").value = "";
+            document.querySelector("#modal2").style.display = "block";
+        })
+ }())          
+
+
+        
+
+
+    </script>
+</body>
+</html>
